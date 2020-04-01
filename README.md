@@ -1,6 +1,6 @@
 # International Morse Code Converter
 
-Simple more code converter. Convert text to morse code and morse code to text.
+Simple morse code converter. Convert text to morse code and morse code to text.
 
 Created in 2017 in roughly one day. The code is quite old and should be completely rewritten... But I just wanted to archive the project on GitHub and maybe return to it one day.
 
