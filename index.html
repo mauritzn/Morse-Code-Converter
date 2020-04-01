@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>International Morse Code Converter</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.mauritzonline.com/bootstrap_custom/style.css">
+
+    <link rel="stylesheet" href="css/main.css?v2">
+  </head>
+
+  <body>
+
+    <div class="header">
+      <div class="container">
+        <h1 class="nmt" style="margin-bottom: 45px;">International Morse Code Converter</h1>
+      </div>
+    </div>
+
+    <div class="sub_header">
+      <div class="container" style="padding-top: 35px;padding-bottom: 35px;">
+
+        <div class="row">
+          <div class="col-md-9">
+            <p>
+              <label for="text_or_morse">Enter text or Morse code</label>
+              <input type="text" name="text_or_morse" id="text_or_morse" placeholder="Enter text you want to convert to morse code or vice versa" required>
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <p>
+              <label for="morse_code_seperator">Morse Code Seperator</label>
+              <select name="morse_code_seperator" id="morse_code_seperator" required>
+                <option value="five_spaces" selected>Five spaces</option>
+                <option value="pipe">|</option>
+                <option value="slash">/</option>
+              </select>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="container output_cont" style="padding-top: 35px;padding-bottom: 35px;">
+      <p id="convert_results_nice_ascii_container">
+        <label for="convert_results_nice_ascii">Results (nice ascii)</label>
+        <textarea name="convert_results_nice_ascii" id="convert_results_nice_ascii" readonly></textarea>
+      </p>
+
+      <p id="convert_results_default_ascii_container">
+        <label for="convert_results_default_ascii">Results (default ascii)</label>
+        <textarea name="convert_results_default_ascii" id="convert_results_default_ascii" readonly></textarea>
+      </p>
+
+      <div id="morse_code_audio">
+        <p style="display: none;"><a href="javascript:void(0);">Play Morse Code Sound</a></p>
+      </div>
+
+
+      <footer>
+        &copy; Copyright 2017, Mauritz Nilsson - All Rights Reserved | made in roughly a day, so bugs are expected
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mauritzonline.com/bootstrap_custom/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.1.5/Tone.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/functions.js?v2"></script>
+    <script type="text/javascript" src="js/morse_alphabet.js?v2"></script>
+    <script type="text/javascript" src="js/main.js?v2"></script>
+  </body>
+</html>
