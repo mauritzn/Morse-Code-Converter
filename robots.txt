@@ -118,7 +118,5 @@ User-agent: WebReaper
 Disallow: /
 
 
-# Used to stop robots from indexing Webpad
-# and other things that will return nothing
 User-agent: *
 Disallow: /cgi-bin/
